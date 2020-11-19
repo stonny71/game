@@ -1,0 +1,381 @@
+<!--Written by stonny-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+</style>
+<link rel="stylesheet" href="https://rawcdn.githack.com/stonny71/pocketLife/b8eaf3f3f38439b6ea0e962056a11abf3452eb72/pocket.css">
+<script src="https://rawcdn.githack.com/stonny71/pocketLife/f29902896fd0f0b7a04b6f3de8cca631e6c6373d/pocket.js"> </script>
+<title>Pocket Life</title>
+</head>
+<body onload="START_GAME()">
+<header class="hide"  id="header" >
+ <span id="left"> ⚡  <b id="energy" >10</b> </span>
+ <span id="center"> 🧠   <b id="xp" >10</b>  </span>
+<span id="right"  >💰 <b id="money" >50</b></span>
+ <hr>
+ </header> 
+ <div class="hide"  id="dif" ><button id="difBack" >back</button>
+ <div id="difficulty" >
+ <center>
+
+ <ul>
+ <li id="easy" >Easy</li>
+ <li id="medium" >Medium</li>
+ <li id="hard" >Hard</li>
+ </ul>
+ 
+ </center>
+ 
+ </div>
+</div>
+ 
+ <div class="hide"  id="help" >
+ <button id="closeHelp" >Back</button>
+ 
+ <center> <h1>How to play</h1></center>
+ <h4> 
+ <p>The Objective of this game is to get rich and spend your money wisely.</p>
+<p> 💰    denotes money</p>
+<p> ⚡     denotes  energy  </p>
+<p> 🧠     denotes  experience often expressed in XP  </p>
+ <p> Eat to get energy.</p>
+ <p> Go to school to gain experience.</p>
+<p>Go to work to earn some money and more experience.</p>
+<p>So many choices give or reduce your <i>Respect.</i></p>
+<p>Buying too much fancy stuff reduces your XP.</p>
+
+<p>Bad choices can make you go bankrupt</p>
+<p>Explore the game, I bet you are going to love it</p>
+<p>lots of love 🥰🥰🥰🥰🥰 </p><p></p>
+<p><u>Stonny</u></p>
+
+<p>
+ <b>More hints</b>   <br />
+ <small>
+ <p>Higher education requires 7k energy, 7k XP, 7k money</p>
+  <p>To become a professor, you must have 10k XP, 10k money, 10k Energy</p>  
+  <p>CEO requires 10k XP, 10K energy, advisable to become a professor before going for CEO</p>   
+ </small>   
+    
+</p>
+ </h4>
+ </div>
+ 
+ 
+ 
+ 
+ <div class="hide"  id="more" >
+ <button id="closeMore" >Back</button>
+ 
+<center> <h1>More</h1></center>
+ 
+ <h4>
+ <center>
+  <a href="https://www.sololearn.com/Profile/5130756/?ref=app">  <div class="devv">ABOUT THE DEVELOPER</div></a>
+        
+        
+     
+ </center>
+<b>You might also like:</b>
+<ul class="moreUL">
+ <li> <a href="https://code.sololearn.com/WwzuzOH5RVTC/?ref=app">Auto Certificate Builder</a></li>   
+<li><a href="https://code.sololearn.com/W80f1KKqnPBT/?ref=app">Auto Form Builder</a></li>
+<li><a href="https://code.sololearn.com/WQ5XGhoPYroe/?ref=app">Mush The chat bot</a></li>
+
+<li><a href="https://code.sololearn.com/W65l91EaKVx7/?ref=app">Julian's Diary (A sad story)</a></li>
+
+</ul>
+
+<br><br>
+
+<a>Thank you so much for playing !!! 🥰🥰</a>
+<br><br> 
+</h4>
+ </div>
+ 
+ 
+<div class=""  id="home" >
+<center>
+<p>POCKET <span class="des" >LIFE</span></p>
+<span class="des2"  >Clicker Game</span>
+<h1 class="red" id="difficultyBtn" >PLAY</h1>
+<h1 id="helpBtn"  class="blue" >HELP</h1>
+<h1 id="moreBtn"   class="pink" >MORE</h1>
+</center>
+<marquee style="font-size:10px" >WRITTEN BY STONNY</marquee>
+</div>
+
+
+ <main id="main" class="hide" >
+
+
+ 
+ <!--food-->
+ <article id="food" >
+ <section onclick="alert('Eat to gain energy')" class="pad2" >
+ <b class="emoji" >  🥘 </b>
+ <small >food</small>
+ </section>
+ <mark id="cook" class="m1 foodm1" >
+ <span >cook</span>
+ </mark>
+ 
+ <mark id="buy"  class="m2 foodm2" > 
+ <span > buy</span>
+ </mark>
+ 
+ 
+ </article>
+ 
+ <!--elem-->
+ <article id="education" >
+ <section onclick="alert('Learn for more experience')" class="pad2" >
+<b class="emoji" > 🏫 </b>
+<small >Education</small>
+ </section>
+ <mark id="learn"  style="background:#E0F7FA; width:100%" class="m1 btnStyle fullWidth" >
+ Learn
+</mark>
+
+
+
+ 
+ </article>
+ 
+ <!--work-->
+ <article >
+ <section onclick="alert('Work to earn money')" class="pad2" >
+ <b class="emoji" > 💼 </b>
+ <small >Work</small>
+ </section>
+ <mark id="work"  style="background:#E8F5E9"  class="m1 btnStyle" >
+ Work
+ </mark>
+ 
+ </article>
+ 
+ <!--market-->
+ <article id="market" >
+ <section id="lifeStyle" class="pad2" >
+ <b class="emoji" > 🛍️ </b>
+ <small style="font-size:0.45em" >Life style</small>
+ </section>
+
+<section id="achievement" class="pad2" >
+<b class="emoji" > 🏆️ </b>
+<small style="font-size:0.4em" >Achievements</small>
+</section>
+
+<section id="exit"  class="pad2" >
+<b class="emoji" > ✖️️ </b>
+<small style="font-size:0.4em" >Exit</small>
+</section>
+
+
+ </article>
+ </main>
+ 
+ <div class="padding hide"  id="foodMenu">
+<span  id="clsbtn" class='clsbtn' style='float:right' > &times;</span>
+<br>
+  <h1>What do you want to buy? </h1>
+<p>
+<span class="rec"  id="recipes" >Recipes</span> <span id="meals" >Meals</span>
+</p>
+<ul class=""   id="buyRecipes" >
+<li> 🥘 <button id="23"  class="r1" >23 💰</button></li>
+<li> 🥧 <button id="20"  class="r1" >20 💰</button></li>
+<li> 🍚 <button id="17"  class="r1" >17 💰</button></li>
+<li> 🍞 <button id="13"  class="r1" >13 💰</button></li>
+<li> 🥩 <button id="10"   class="r1" >10 💰</button></li>
+</ul>
+
+
+<ul class="hide"    id="buyMeals" >
+<li> 🍜  <small> +25 ⚡  </small ><button id="30"  class="r3" >30 💰</button></li>
+<li > 🍛  <small> +20 ⚡  </small><button id="25"  class="r3" >25 💰</button></li>
+<li> 🍕 <small> +15 ⚡  </small><button id="20"  class="r3" >20 💰</button></li>
+<li> 🍿  <small> +10 ⚡  </small><button id="15"  class="r3" >15 💰</button></li>
+<li> 🍉  <small> +5 ⚡  </small><button id="10"  class="r3" > 10 💰</button></li>
+</ul>
+</div>
+
+<div class="hide padding" class="padding"  id="kitchenMenu">
+<span  id="clsbtn2" class='clsbtn' style='float:right' > &times;</span>
+<br>
+ <h1>What do you want to cook? </h1>
+<ul   id="kitchen" >
+<li> 🥘 <button id="pizza"  class="r2" >0</button></li>
+<li> 🥧 <button id="cake"  class="r2" >0</button></li>
+<li> 🍚 <button id="rice"  class="r2" >0</button></li>
+<li> 🍞 <button id="bread"  class="r2" >0</button></li>
+<li> 🥩 <button id="meat"   class="r2" >0</button></li>
+</ul>
+</div>
+ 
+ 
+ <div class="padding hide "  id="eduMenu">
+ <span id='clsbtn3' class='clsbtn' style='float:right' > &times;</span>
+ <br>
+ <h1>Select a level of education. </h1>
+ 
+ <ul class=""   id="enrollSchool" >
+ <li> 👶 <small>Elementary</small> <button id="50"  class="k1" >50 💰</button></li>
+ <li> 🧝️ <small>High school</small> <button id="200"  class="k1" >200 💰</button></li>
+ <li> 👩‍🎓 <small>College </small><button id="1000"  class="k1" >1000 💰</button></li>
+ 
+ <li> 🔥 <small>Higher Education</small><button id="7000"  class="k1" >7000 💰</button></li>
+ <li> 👽 <small>Professor</small><button class="k1"  id="10000"   class="ufo" >30000 💰</button></li>
+
+ </ul> 
+ <center>
+ <small id="showEdu"   class="hide"  style="font-size:0.7em"  >You have completed your studies, You no longer lack skills and experience.</small>
+</center>
+ </div>
+ 
+ <!--wprk menhu--->
+
+ <div class="padding hide"  id="workMenu">
+ <span id="clsbtn4"  class='clsbtn' style='float:right' > &times;</span>
+ <br>
+ <h1>Select  mode of career </h1>
+ 
+ <span id="employee" class="rec pad1"  >Employee</span> 
+ <span class="pad2" id="employer" >Employer</span>
+ 
+ 
+ <ul class="hi"   id="workAsEmployee" >
+ <li> 👮🏻‍♂️ <small>Security</small> <button id="50"  class="w" >50 💰</button></li>
+ <li> 👨🏻‍🔧️ <small> Maintenance Man </small>
+ <button id="60"  class="w" >120 💰</button></li>
+ <li>  🕵🏻‍♂️️  <small>Supervisor </small>
+ <button id="70"  class="w" >300   💰    </button></li>
+ 
+ <li>  👨🏻‍💻 <small>Senior Manager</small><button id="80"  class="w" >700 💰</button></li>
+ <li> 👨🏻‍💼 <small>CEO</small><button id="100"   class="w" >100000 💰</button></li>
+ </ul>
+ 
+ <ul class="hide"   id="workAsEmployer" >
+ <li>  💷   <small>Buy company</small> <button id="buyCompany"  class="ww" >1000000 💰</button></li>
+ <li> 💴️ <small> Build company </small>
+ <button id="buildCompany"  class="ww" >500000 💰</button></li>
+ 
+ <li> 👥️ <small> Employ workers </small>
+ <button id="employWorkers"  class="ww" >5000 💰</button></li>
+<li>🖥️ <small style="font-size:0.3em" >Idle employees</small> <button id="noWork" >0</button></li>
+ <br>
+ 
+ <center>
+ <small> Go to Achievement page to see the progress of your company</small>
+ </center>
+ </ul> 
+ </div>
+ 
+ 
+ <!--achievements-->
+ <div class="padding hide"  id="achievementList">
+ <span  id="clsbtn5" class='clsbtn' style='float:right' > &times;</span>
+ <br>
+ <h1>Achievements</h1>
+ 
+ <ul class=""   id="achievementList" >
+ 
+ <li>Wife <code id="wife" >Not married</code> </li>
+ <li>kids <code id="kids" >No kids</code> </li>
+ <li>Networth <code class="green"  id="net" ></code> </li>
+ <li>Energy <code class="green"  id="en" ></code> </li>
+ <li>Experience <code class="green"  id="exp" ></code> </li>
+ <li>Employees <code id="empl" >0</code> <code class="hide" id="emp" >0</code> </li>
+  <li>Respects <code id="respects" >0</code> </li>
+ <li>Vehicles<code id="vehicles" >0</code> </li>
+ <li>pets <code id="pets" >0</code> </li>
+ <li>Citizenship <code id="citizenShip" >0 countries</code> </li>
+ </ul>
+ </div>
+ 
+ <div class="padding hide"  id="lifeMenu">
+ <span  id="clsbtn6" class='clsbtn' style='float:right' > &times;</span>
+ <br>
+ <h1>Life Style</h1>
+ 
+ <ul class=""   id="lifeList" >
+ <li> 👰  <small >marry</small> 
+ <button id="marry" > Yes</button></li>
+ 
+ <li> 🏠  <small  >House</small>
+ <button id="house" >30000  </button></li>
+ 
+ 
+ <li> 🏘️  <small  >Mansion</small>
+ <button id="mansion" >3Million  </button></li>
+ 
+ <li> 🏍️  <small>Bike</small> 
+ <button id="bike" >100000   ️</button></li>
+  <li> 🐕  <small  >Dog</small> 
+ <button id="dog" >50000 </button></li>
+ 
+  <li> 🐈  <small  >Cat</small>
+ <button id="cat" >30000  </button></li> 
+ 
+ <li> 🚗  <small  >Car</small>
+ <button id="car" >500000  </button></li>
+ 
+ <li> 🚁  <small  >Helicopter</small>
+ <button id="helicopter" >3Million  </button></li>
+ 
+ <li> 🏯  <small  >hotel</small>
+ <button id="hotel" >300Million  </button></li>
+  
+  <li> 🏟️  <small  >Stadium</small>
+ <button id="stadium" >800Million  </button></li>
+  
+ <li> 🐼  <small  >Panda</small>
+ <button id="panda" >30Million</button></li>
+  
+  <li> 🤼  <small  >Fund Olympic</small>
+  <button id="olympic" >30Billion</button></li>
+ 
+ 
+  <li> 🛫  <small  >Airport</small>
+ <button id="airport" >3Billion  </button></li>
+  
+  <li> 👩‍💻  <small  > Fund Cyber safety campaign</small>
+  <button id="cyber" >10Billion</button></li>
+  
+ <li> ✍️  <small  >Contest for Presidency</small>
+ <button id="president" >30Billion</button></li>
+ 
+ <li> 🔭  <small  >Sponsor NASA</small>
+ <button id="nasa" >100Billion</button></li>
+ 
+ 
+ <li> 🇬🇪  <small  >Become citizen of every nation</small>
+ <button id="citizen" >1 trillion</button></li>
+ 
+ <li> ☣️  <small  > Fight Covid-19 </small>
+ <button id="covid" >500Billion</button></li>
+ 
+ </ul>
+ 
+ </div>
+ 
+ 
+ <div class="hide"  id="final">
+ <span  id="end" class='clsbtn' style='float:right;' > &times;</span>
+ <h1>GAME COMPLETED !!!</h1>
+ <p style="margin-top:0px" >Congratulations for making it this far.<br>If you love my work, please upvote.<br>I made this game with my mobile phone. <br> If you would love to support my future projects like <b>Pocket Life 2</b>, please support by donating some money for me, I need to buy a PC.<br> I will never forget you.<br>Thank you so much for completing the game. 🤑🤑
+ </p>
+ <p>Project-TN-016 is going to cause a severe war between Martians and Earthlings, The whole world need to stop the Aliens from taking over!.<br>Project-TN-016 was a failed trip, get ready to fight the Aliens from Mars.
+ </p>
+ 
+ <p>They saw your name written on the moon, They are trying all means to kill you</p>
+ <p>
+ Get ready to play pocket Life 2<br>
+ <marquee behavior="alternate"><i><span class="green" >POCKET LIFE 2 </span> Coming soon</i></marquee>
+ </p>
+ </div>
+ 
+</body>
+</html>
